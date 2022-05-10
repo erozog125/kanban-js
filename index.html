@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task</title>
+</head>
+<body>
+    <header><h1>Lista de Tareas</h1></header>
+		<div class="container">
+				<input id="input-title" type="text" placeholder="Título">
+				<textarea name="" id="ta-description" cols="5" rows="5" id="description"></textarea>
+				<select name="" id="select-priority">
+					<option value="alta">Alta</option>
+					<option value="mediana">Mediana</option>
+					<option value="baja">Baja</option>
+				</select>
+				<button id="generate">Generate</button>
+			</div>    
+    <main>
+        <div id="todo" class="list todo"></div>
+        <div id="doing" class="list doing"></div>
+        <div id="done" class="list done"></div>
+				<template><h3>Hola<h3></template>
+    </main>
+		<script src="app.js"></script>
+</body>
+</html>

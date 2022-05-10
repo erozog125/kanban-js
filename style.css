@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #033473;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Macondo', cursive;
+  font-size: 2rem;
+  color: #28930b;
+  border-bottom: #167d70 2px groove;
+  padding: 0;
+}
+
+select {
+  width: 6rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px #07c41a;
+  border-radius: 15px;
+  background-color: #221007;
+  color: #ffff;
+}
+
+.container {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px brown;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color:gray;
+}
+
+.container input {
+  border-radius: 15px;
+}
+
+.container textarea {
+  width: 11rem;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+main {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#generate {
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+#generate:hover,
+#generate:focus {
+  cursor: pointer;
+  background-color: #28930b;
+  font-weight: 900;
+  color: #ffff00;
+}
+
+.card-task {
+  width: 80%;
+  height: 5rem;
+  margin: 0.5rem;
+  border: solid 1px #000000;
+  background-color: #fff;
+}
+
+.card-task h2 {
+  font-size: 1rem;
+  border-bottom: solid green 1px;
+}
+
+.card-task p {
+  font-size: 1rem;
+  height: 2rem;
+  border-bottom: solid green 1px;
+}
+
+.card-task select {
+  width: 100%;
+  height: 0.8rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.list {
+  width: 12rem;
+  height: 16rem;
+  border: groove 6px orange;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #4cbbee;
+}
+
+.list h2 {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.list p {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+.list select {
+  
+}
