@@ -9,22 +9,26 @@
 </head>
 <body>
     <header><h1>Lista de Tareas</h1></header>
-		<div class="container">
-				<input id="input-title" type="text" placeholder="Título">
-				<textarea name="" id="ta-description" cols="5" rows="5" id="description"></textarea>
-				<select name="" id="select-priority">
-					<option value="alta">Alta</option>
-					<option value="mediana">Mediana</option>
-					<option value="baja">Baja</option>
-				</select>
-				<button id="generate">Generate</button>
+		<div class="principal">
+			<div class="container">
+					<h2>Agregar Tareas</h2>
+					<input id="input-title" type="text" placeholder="Título">
+					<textarea name="" placeholder="Descripción..." id="ta-description" cols="5" rows="5" id="description"></textarea>					
+					<select name="" id="select-priority">						
+						<option value="alta">Alta</option>
+						<option value="mediana">Mediana</option>
+						<option value="baja">Baja</option>
+					</select>
+					<button id="generate">Generate</button>
+					<hr>
+					<h4>Elaborado por Edwin Rozo - Instructor</h4>
 			</div>    
-    <main>
-        <div id="todo" class="list todo"></div>
-        <div id="doing" class="list doing"></div>
-        <div id="done" class="list done"></div>
-				<template><h3>Hola<h3></template>
-    </main>
+			<main>
+					<div id="todo" class="list todo"><h2>To Do</h2></div>
+					<div id="doing" class="list doing"><h2>Doing</h2></div>
+					<div id="done" class="list done"><h2>Done</h2></div>					
+			</main>
+		</div>
 		<script src="app.js"></script>
 </body>
 </html>

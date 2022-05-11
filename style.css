@@ -37,30 +37,58 @@ select {
 }
 
 .container {
-  width: 20rem;
-  height: 20rem;
+  width: 20%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: solid 2px brown;
-  margin-top: 1rem;
+  align-items: center;  
+  margin: 3rem;
   border-radius: 10px;
   padding: 1rem;
   background-color:gray;
+  flex-wrap: wrap;
+}
+
+.boards {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.boards > fieldset {
+  width: 100%;
+  height: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: #2b2e2e 2px groove;
+}
+
+hr {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
 }
 
 .container input {
   border-radius: 15px;
+  padding-left: 1rem;
+  width: 80%;
 }
 
 .container textarea {
-  width: 11rem;
+  width: 80%;
   border-radius: 15px;
   margin-top: 5px;
+  padding-left: 1rem;
+}
+
+h2,h4 {
+  text-align: center;  
 }
 
 main {
-  width: 100%;
+  width: 80%;
   height: 40rem;
   display: flex;
   justify-content: center;
@@ -87,11 +115,28 @@ main {
 
 .card-task {
   width: 80%;
-  height: 5rem;
-  margin: 0.5rem;
-  border: solid 1px #000000;
+  height: auto;
+  margin: 0.5rem;  
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
+
+.btn-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  background-color: #b31408;
+  font-weight: 900;
+  color: #ffff00;
+}
+
 
 .card-task h2 {
   font-size: 1rem;
@@ -105,21 +150,19 @@ main {
 }
 
 .card-task select {
-  width: 100%;
-  height: 0.8rem;
+  width: 100%;  
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .list {
-  width: 12rem;
-  height: 16rem;
+  width: 25%;
+  height: 90%;
   border: groove 6px orange;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 15px;
+  align-items: center;  
   background-color: #4cbbee;
 }
 
@@ -136,6 +179,9 @@ main {
   text-align: center;
 }
 
-.list select {
-  
+.principal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
